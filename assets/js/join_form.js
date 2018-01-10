@@ -2,7 +2,8 @@
 
 $(function() {
 
-  $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+  $("#gform input").jqBootstrapValidation(
+  {
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events
@@ -25,7 +26,6 @@ $(function() {
         url: "https://ef3u4eiicc.execute-api.us-east-1.amazonaws.com/prod/join",
         type: "POST",
 		dataType: 'json',
-		contentType: 'application/json',
         data: JSON.stringify(data),
         success: function() {
           // Success message
