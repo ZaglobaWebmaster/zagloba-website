@@ -2,7 +2,7 @@
 
 $(function() {
 
-  $("#gform input").jqBootstrapValidation(
+  $("#joinForm input").jqBootstrapValidation(
   {
     preventSubmit: true,
     submitError: function($form, event, errors) {
