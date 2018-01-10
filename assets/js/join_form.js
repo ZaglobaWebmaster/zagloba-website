@@ -17,16 +17,15 @@ $(function() {
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
-	  var data = {
-          name: name,
-          email: email
-        }
       }
       $.ajax({
-        url: "https://ef3u4eiicc.execute-api.us-east-1.amazonaws.com/prod/join",
+        url: "https://script.google.com/macros/s/AKfycbxIYRmUpbKLvy7WRb7BLnE5xQjfdiH8Md67cYIqzmVNtBL9bhHQ/exec",
         type: "POST",
+        data: {
+          name: name,
+          email: email
+		},
 		dataType: 'json',
-        data: JSON.stringify(data),
         success: function() {
           // Success message
           $('#success').html("<div class='alert alert-success alert-dismissable fade show'>");
