@@ -24,7 +24,6 @@ $(function() {
         data: {
           name: name,
           email: email,
-		  subject: "Contact Zagłoba",
           message: message
         },
 		dataType: "json",
