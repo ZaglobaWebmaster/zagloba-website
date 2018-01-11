@@ -19,7 +19,7 @@ $(function() {
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
       $.ajax({
-        url: "https://formspree.io/polishclubzagloba@gmail.com",
+        url: "https://script.google.com/macros/s/AKfycbziHkUxTyr2PZsQn3-LE5_Vcgr28pyYVdLka5s5X0wr2z51nJY/exec",
         method: "POST",
         data: {
           name: name,
