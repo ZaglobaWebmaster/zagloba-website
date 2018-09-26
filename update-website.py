@@ -27,5 +27,6 @@ for i in range(len(p)):
 		event_details += " - "
 		event_details += str(p[i].text).replace("Time: ", "")
 		print(event_name + event_name)
+	print(i)
 
 input()
