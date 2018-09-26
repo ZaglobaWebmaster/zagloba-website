@@ -6,7 +6,25 @@ call(["git", "commit", "-m", "\"Update\""])
 call(["git", "push"])
 
 doc = Document("frontpage.docx")
-for p in doc.paragraphs:
-	print(p.text)
+p = doc.paragraphs
+for i in range(len(p)):
+	text = p[i].text
+	if text == "BANNER":
+		i += 1
+		print("Banner Text:")
+		print(p[i].text)
+	elif text == "EVENT":
+		i += 1
+		print("Event Details:")
+		event_name = p[i].text
+		i += 1
+		event_name += "\n"
+		event_details = p[i].text
+		i += 1
+		event_details += " - "
+		event_details += p[i].text
+		i += 1
+		event_details += " - "
+		event_details += p[i].text
 
 input()
