@@ -26,5 +26,6 @@ for i in range(len(p)):
 		i += 1
 		event_details += " - "
 		event_details += p[i].text
+		print(event_name + event_name)
 
 input()
