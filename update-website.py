@@ -16,16 +16,16 @@ for i in range(len(p)):
 	elif text == "EVENT":
 		i += 1
 		print("Event Details:")
-		event_name = p[i].text.remove("Name: ", "")
+		event_name = str(p[i].text).remove("Name: ", "")
 		i += 1
 		event_name += "\n"
-		event_details = p[i].text.remove("Location: ", "")
+		event_details = str(p[i].text).remove("Location: ", "")
 		i += 1
 		event_details += " - "
-		event_details += p[i].text.remove("Date: ", "")
+		event_details += str(p[i].text).remove("Date: ", "")
 		i += 1
 		event_details += " - "
-		event_details += p[i].text.remove("Time: ", "")
+		event_details += str(p[i].text).remove("Time: ", "")
 		print(event_name + event_name)
 
 input()
